@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TeamFlow — Your team workspace, simplified</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Sora:wght@600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="page-frame">
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+      <a href="#" class="logo">
+        <span class="logo-mark"><i></i><i></i><i></i></span>
+        TeamFlow
+      </a>
+
+      <nav class="nav-links">
+        <a href="#features">Features</a>
+        <a href="#product">Product</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="#" class="btn-ghost">Log in</a>
+        <a href="#" class="btn-primary">Sign up</a>
+      </div>
+
+      <button class="nav-toggle" aria-label="Toggle menu" id="navToggle">
+        <span></span><span></span><span></span>
+      </button>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero" id="hero">
+      <div class="hero-copy">
+        <h1>Your team<br>workspace<br><span>simplified.</span></h1>
+        <p>Boost your team's productivity by keeping every project, message and file in one connected place.</p>
+        <div class="hero-cta">
+          <a href="#pricing" class="btn-primary btn-lg">Get Started</a>
+          <a href="#product" class="btn-text">Watch demo <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+              <path d="M4 3l8 5-8 5V3z" fill="currentColor" />
+            </svg></a>
+        </div>
+        <div class="hero-trust">
+          <div class="avatars">
+            <span></span><span></span><span></span><span></span>
+          </div>
+          <p>Trusted by 4,200+ teams worldwide</p>
+        </div>
+      </div>
+
+      <div class="hero-art">
+        <div class="art-glow"></div>
+
+        <div class="rail">
+          <p class="rail-greet">Hey Emy </p>
+          <div class="rail-icons">
+            <span class="ri ri-blue">◧</span>
+            <span class="ri ri-yellow">◆</span>
+            <span class="ri ri-red">▲</span>
+            <span class="ri ri-purple">✦</span>
+            <span class="ri ri-green">▦</span>
+          </div>
+          <span class="rail-add">+</span>
+        </div>
+
+        <div class="panel panel-main">
+          <div class="panel-row">
+            <div class="mini-card mini-peach">
+              <p class="mini-label">Total Revenue</p>
+              <p class="mini-value">$18,392.07</p>
+              <span class="mini-up">▲ 5.6% · 273 Orders</span>
+              <svg class="sparkline" viewBox="0 0 100 24" preserveAspectRatio="none">
+                <polyline points="0,18 15,14 30,17 45,8 60,12 75,4 100,6" />
+              </svg>
+            </div>
+            <div class="mini-card mini-lilac">
+              <p class="mini-label">Subscribers</p>
+              <p class="mini-value">3,984</p>
+              <span class="mini-up">▲ 4.6% · Response Time</span>
+              <svg class="sparkline" viewBox="0 0 100 24" preserveAspectRatio="none">
+                <polyline points="0,10 15,16 30,6 45,14 60,9 75,15 100,3" />
+              </svg>
+            </div>
+          </div>
+
+          <p class="panel-heading">Recent Transactions</p>
+          <ul class="tx-list">
+            <li><span>15 February</span><b>+$412.00</b><i class="tx-dot"></i></li>
+            <li><span>13 February</span><b>+$128.50</b><i class="tx-dot"></i></li>
+            <li><span>10 February</span><b>+$981.20</b><i class="tx-dot"></i></li>
+            <li><span>07 February</span><b>+$204.00</b><i class="tx-dot"></i></li>
+          </ul>
+
+          <div class="chip-row">
+            <span class="chip"><i class="dot dot-slack"></i>Slack</span>
+            <span class="chip"><i class="dot dot-asana"></i>Asana</span>
+            <span class="chip"><i class="dot dot-dropbox"></i>Dropbox</span>
+            <span class="chip"><i class="dot dot-notion"></i>Notion</span>
+          </div>
+        </div>
+
+      
+        <div class="panel panel-settings">
+          <div class="settings-user">
+            <span class="avatar-sm"></span>
+            <div><b>Anna Peterson</b><small>Account manager</small></div>
+          </div>
+          <ul class="settings-list">
+            <li>Billing Settings</li>
+            <li>Team Management</li>
+            <li>Subscription Plans</li>
+            <li>Customize Reports</li>
+          </ul>
+          <div class="settings-history">
+            <p>History <b>Monthly ▾</b></p>
+            <div class="wave"></div>
+          </div>
+        </div>
+
+        <!-- floating revenue card -->
+        <div class="panel panel-float">
+          <p class="mini-label">Total Revenue</p>
+          <p class="mini-value">$18,392.07</p>
+          <span class="mini-up">▲ 5.6% · 273 Orders</span>
+          <svg class="sparkline sparkline-lg" viewBox="0 0 120 30" preserveAspectRatio="none">
+            <polyline points="0,22 20,17 40,20 60,8 80,14 100,5 120,9" />
+          </svg>
+        </div>
+
+        <!-- dark analytics card -->
+        <div class="panel panel-dark">
+          <p class="mini-label light">$18,392.07</p>
+          <small class="light-sub">6% vs 24hr last week</small>
+          <div class="bars">
+            <span style="height:40%"></span><span style="height:65%"></span><span style="height:30%"></span>
+            <span style="height:80%"></span><span style="height:50%"></span><span style="height:70%"></span>
+            <span style="height:45%"></span>
+          </div>
+        </div>
+
+        <!-- orders / earnings ring card -->
+        <div class="panel panel-ring">
+          <p class="mini-label light">Orders</p>
+          <p class="mini-value light">16,349</p>
+          <small class="light-sub">1,174 pending</small>
+          <div class="ring-wrap">
+            <div class="ring"></div>
+            <span class="ring-label">Earnings</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LOGO STRIP -->
+    <section class="logo-strip">
+      <p>Integrates with the tools your team already loves</p>
+      <div class="logo-row">
+        <span>Slack</span><span>Asana</span><span>Dropbox</span><span>Notion</span><span>Figma</span><span>Zoom</span>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="features" id="features">
+      <div class="section-head">
+        <h2>Everything your team needs, nowhere else to look.</h2>
+        <p>Messages, files, tasks and reports finally live under one roof — so nothing gets lost between tabs.</p>
+      </div>
+
+      <div class="feature-grid">
+        <article class="feature-card">
+          <span class="feature-icon icon-blue">◧</span>
+          <h3>Unified dashboard</h3>
+          <p>See revenue, subscribers and open tasks the moment you log in — no digging through five different apps.</p>
+        </article>
+        <article class="feature-card">
+          <span class="feature-icon icon-yellow">◆</span>
+          <h3>Smart messaging</h3>
+          <p>Threaded conversations that stay attached to the project they belong to, so context never gets lost.</p>
+        </article>
+        <article class="feature-card">
+          <span class="feature-icon icon-red">▲</span>
+          <h3>Client management</h3>
+          <p>Keep every client's history, invoices and files together, and hand off work without a single missed detail.
+          </p>
+        </article>
+        <article class="feature-card">
+          <span class="feature-icon icon-purple">✦</span>
+          <h3>Automated reports</h3>
+          <p>Weekly summaries land in your inbox automatically, built from the same data your dashboard already shows.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="showcase" id="product">
+      <div class="showcase-copy">
+        <h2>Reports that build<br>themselves.</h2>
+        <p>Connect the tools you already use and TeamFlow quietly turns raw activity into charts your whole team can
+          read at a glance.</p>
+        <ul class="checklist">
+          <li>Live revenue and subscriber tracking</li>
+          <li>Custom report builder, no spreadsheets</li>
+          <li>Shareable links for clients and stakeholders</li>
+        </ul>
+        <a href="#pricing" class="btn-primary">Explore the product</a>
+      </div>
+      <div class="showcase-art">
+        <div class="panel panel-showcase">
+          <div class="showcase-top">
+            <p>Analytics</p>
+            <span>Last 30 days ▾</span>
+          </div>
+          <svg class="showcase-chart" viewBox="0 0 320 140" preserveAspectRatio="none">
+            <polyline points="0,110 40,90 80,100 120,60 160,75 200,30 240,50 280,15 320,35" />
+          </svg>
+          <div class="showcase-stats">
+            <div><b>$182,4K</b><span>Revenue</span></div>
+            <div><b>3,984</b><span>Subscribers</span></div>
+            <div><b>96%</b><span>Retention</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="testimonials">
+      <div class="section-head">
+        <h2>Teams run calmer on TeamFlow.</h2>
+      </div>
+      <div class="testimonial-grid">
+        <blockquote>
+          <p>"We closed three tools the week we switched. Everyone finally looks at the same numbers."</p>
+          <footer><span class="avatar-sm"></span>
+            <div><b>Priya Nair</b><small>Operations Lead, Fenwick</small></div>
+          </footer>
+        </blockquote>
+        <blockquote>
+          <p>"Onboarding took an afternoon. Reporting that used to eat my Fridays now just... happens."</p>
+          <footer><span class="avatar-sm av-2"></span>
+            <div><b>Diego Santos</b><small>Founder, Loop Studio</small></div>
+          </footer>
+        </blockquote>
+        <blockquote>
+          <p>"Support tickets and client billing finally live in the same place. Small thing, huge relief."</p>
+          <footer><span class="avatar-sm av-3"></span>
+            <div><b>Hana Kobayashi</b><small>Agency Owner</small></div>
+          </footer>
+        </blockquote>
+      </div>
+    </section>
+
+
+    <section class="pricing" id="pricing">
+      <div class="section-head">
+        <h2>Simple pricing, no surprises.</h2>
+        <p>Start free. Upgrade only when your team actually needs more room.</p>
+      </div>
+      <div class="pricing-grid">
+        <div class="price-card">
+          <h3>Starter</h3>
+          <p class="price">$0<span>/mo</span></p>
+          <p class="price-desc">For small teams getting organized.</p>
+          <ul>
+            <li>Up to 5 members</li>
+            <li>Basic dashboard</li>
+            <li>1 GB storage</li>
+          </ul>
+          <a href="#" class="btn-ghost btn-block">Get Started</a>
+        </div>
+        <div class="price-card featured">
+          <span class="price-badge">Most popular</span>
+          <h3>Growth</h3>
+          <p class="price">$24<span>/mo</span></p>
+          <p class="price-desc">For teams ready to scale reporting.</p>
+          <ul>
+            <li>Up to 25 members</li>
+            <li>Full analytics suite</li>
+            <li>50 GB storage</li>
+            <li>Priority support</li>
+          </ul>
+          <a href="#" class="btn-primary btn-block">Get Started</a>
+        </div>
+        <div class="price-card">
+          <h3>Scale</h3>
+          <p class="price">$59<span>/mo</span></p>
+          <p class="price-desc">For agencies managing clients.</p>
+          <ul>
+            <li>Unlimited members</li>
+            <li>Custom reports</li>
+            <li>500 GB storage</li>
+          </ul>
+          <a href="#" class="btn-ghost btn-block">Get Started</a>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="cta">
+      <h2>Bring your team into one workspace today.</h2>
+      <p>No credit card required. Cancel anytime.</p>
+      <a href="#pricing" class="btn-primary btn-lg">Get Started Free</a>
+    </section>
+
+
+    <footer class="footer">
+      <div class="footer-top">
+        <a href="#" class="logo">
+          <span class="logo-mark"><i></i><i></i><i></i></span>
+          TeamFlow
+        </a>
+        <div class="footer-cols">
+          <div>
+            <h4>Product</h4>
+            <a href="#features">Features</a>
+            <a href="#product">Product</a>
+            <a href="#pricing">Pricing</a>
+          </div>
+          <div>
+            <h4>Company</h4>
+            <a href="#">About</a>
+            <a href="#">Blog</a>
+            <a href="#">Careers</a>
+          </div>
+          <div>
+            <h4>Support</h4>
+            <a href="#">Help Center</a>
+            <a href="#">Contact</a>
+            <a href="#">Status</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 TeamFlow. All rights reserved.</p>
+        <div class="footer-social">
+          <a href="#">Twitter</a>
+          <a href="#">LinkedIn</a>
+          <a href="#">GitHub</a>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
