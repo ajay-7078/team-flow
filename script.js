@@ -1,12 +1,31 @@
 
 const navToggle = document.getElementById('navToggle');
 const navLinks = document.querySelector('.nav-links');
+const navActions = document.querySelector('.nav-actions');
 
 navToggle.addEventListener('click', () => {
-  navLinks.classList.toggle('open');
+  navLinks.classList.toggle('active');
+  navActions.classList.toggle('active');
   navToggle.classList.toggle('active');
 });
 
+// Close menu when clicking on a link
+document.querySelectorAll('.nav-links a').forEach(link => {
+  link.addEventListener('click', () => {
+    navLinks.classList.remove('active');
+    navActions.classList.remove('active');
+    navToggle.classList.remove('active');
+  });
+});
+
+// Close menu when clicking on Sign up button
+document.querySelectorAll('.nav-actions a').forEach(link => {
+  link.addEventListener('click', () => {
+    navLinks.classList.remove('active');
+    navActions.classList.remove('active');
+    navToggle.classList.remove('active');
+  });
+});
 
 const revealEls = document.querySelectorAll(
   '.feature-card, .price-card, blockquote, .showcase-copy, .showcase-art, .section-head'
@@ -32,7 +51,9 @@ document.querySelectorAll('a[href^="#"]').forEach(link => {
       if (target) {
         e.preventDefault();
         target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        navLinks.classList.remove('open');
+        navLinks.classList.remove('active');
+        navActions.classList.remove('active');
+        navToggle.classList.remove('active');
       }
     }
   });
